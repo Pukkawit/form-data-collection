@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Mode</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="toggle-display-mode">
+      <button id="display-mode">Dark Mode</button>
+    </div>
+    <div class="container">
+      <h1>Dark Mode Operation</h1>
+      <p>This is the paragraph that expresses how toggling works.</p>
+      <form>
+        <fieldset>
+          <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" id="firstName" />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" id="lastName" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-group password">
+            <label for="password">Password:</label>
+            <input type="password" name="password" class="pass" id="pass" />
+          </div>
+          <div class="form-group">
+            <label for="password"> Confirm Password:</label>
+            <input
+              type="password"
+              name="password"
+              class="con-pass"
+              id="con-pass"
+            />
+          </div>
+          <div class="gender">
+            <p>Gender:</p>
+            <div class="gender-options">
+              <div class="element-group">
+                <label for="male">Male</label>
+                <input
+                  type="radio"
+                  name="gender"
+                  id="male"
+                  checked
+                  value="male"
+                />
+              </div>
+              <div class="element-group">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female" />
+              </div>
+              <span onclick="hideShowPaswrd()" class="close"
+                ><i class="fa-regular fa-eye-slash"></i
+              ></span>
+              <span onclick="hideShowPaswrd()" class="open"
+                ><i class="fa-regular fa-eye"></i
+              ></span>
+              <span onclick="hideShowPaswrd2()" class="con-close"
+                ><i class="fa-regular fa-eye-slash"></i
+              ></span>
+              <span onclick="hideShowPaswrd2()" class="con-open"
+                ><i class="fa-regular fa-eye"></i
+              ></span>
+            </div>
+          </div>
+          <div class="terms-conditions">
+            <input
+              type="checkbox"
+              name="term-conditions"
+              id="term-conditions"
+            />
+            <p>
+              By checking, you have accepted our
+              <a href="" id="t_c-ref">Terms and Condition</a>
+            </p>
+          </div>
+          <div class="error-mgs"></div>
+          <button type="submit" id="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+    <footer>
+      Copyright @ Witty Umosung, 2024 -
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
